@@ -176,7 +176,7 @@ section{
     display: flex;
     height: 400px;
     width: 400px;
-    margin: auto 0;
+    justify-content: center;
 }
 
 .section__text{
@@ -346,15 +346,29 @@ section{
     justify-content: space-around;
 }
 
+
 article{
     display: flex;
     width: 10rem;
-    justify-content: space-around;
+    justify-content:flex-start;
+    align-items: center;
     gap: 0.5rem;
+}
+
+article::before{
+    content: "";
+    background-image: url("assets/checkmark.png") ;
+    position: relative;
+    height: 2rem;
+    width: 2rem;
+    background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: cover;
 }
 
 article .icon{
     cursor: default;
+
 }
 
 /* PROJECTS */
